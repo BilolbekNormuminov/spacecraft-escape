@@ -1,4 +1,4 @@
-# spacecraft-escape
+# Spacecraft escape
 
 This is a part of my Computer Science A Levle course school project. The game was mainly created in python programming language v3.10.0.
 
@@ -33,6 +33,6 @@ Use python version 3.10 or higher
 2. Run .exe file (ignore all system warnings)
 
 ### Look and feel
-Photoes coming soon
+![Gameplay](./images/gameplay.png)
 
 ### Enjoy!
