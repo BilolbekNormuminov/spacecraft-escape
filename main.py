@@ -1,5 +1,7 @@
 from room import rooms
+import time
 
+start = None
 current = rooms["hall"]
 inventory = {}
 
@@ -10,13 +12,17 @@ print("Type \"hint\" to receive hint")
 
 def main():
   while True:
-    global current
+    global current, start
 
     print()
     print(current.name.title())
     print(current.description)
 
     if current == rooms["victory"]:
+      end = time.time()
+
+      print(f"You completed in {round(end - start)} seconds")
+      print()
       print("Thanks for playing this game!")
       print()
       print("For reporting bugs or adding new features, please contact to email: bilolbeknormuminov@gmail.com")
@@ -94,4 +100,6 @@ def main():
       print("?")
 
 if __name__ == "__main__":
+  input("Press enter to start the game...")
+  start = time.time()
   main()
