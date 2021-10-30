@@ -16,11 +16,18 @@ def main():
     print(current.name.title())
     print(current.description)
 
+    if current == rooms["victory"]:
+      print("Thanks for playing this game!")
+      print()
+      print("For reporting bugs or adding new features, please contact to email: bilolbeknormuminov@gmail.com")
+      print("Link in bio: https://lnk.bio/QIeZ")
+      print("Consider supporting me: https://www.patreon.com/bilolbeknormuminov")
+      print()
+      input("Press any key to exit...")
+      return
+
     for item in current.items:
       print("  " + item.hint)
-    
-    if current == rooms["victory"]:
-      return
     
     inputs = input("> ").split()
     command = inputs[0]
